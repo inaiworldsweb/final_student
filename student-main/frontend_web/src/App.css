@@ -1,0 +1,12 @@
+/* All styling is now handled by Tailwind CSS */
+
+/* Star Animation */
+@keyframes star-move {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1000px 0;
+    }
+}
