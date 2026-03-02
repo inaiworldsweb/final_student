@@ -347,11 +347,11 @@ const PersonalAITeacher = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-3 leading-tight">
+                <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-2 md:mb-3 leading-tight">
                     Your Personal AI Teacher – Always Available
                 </h2>
-                <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto px-2 md:px-0">
-                    Ed-INAI solves these problems by giving every student their own AI teacher who explains topics clearly, answers doubts instantly, and helps revise concepts anytime.
+                <p className="text-[15px] md:text-[25px] text-gray-400 max-w-2xl mx-auto px-2 md:px-0">
+                    edInai solves these problems by giving every student their own AI teacher who explains topics clearly, answers doubts instantly, and helps revise concepts anytime.
                 </p>
             </motion.div>
 

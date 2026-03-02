@@ -84,7 +84,7 @@ function Header() {
                         style={{ gap: '3px' }}
                         variants={itemVariants}
                     >
-                        <h1 className="text-4xl md:text-4xl lg:text-[60px] font-bold leading-[1.1] tracking-tight text-white">
+                        <h1 className="text-[25px] md:text-[40px] font-bold leading-[1.1] tracking-tight text-white">
                             <span className="block">Learn Smarter With</span>
                             <span className="block mt-2">
                                 India's <span className="text-[#4169E1]">First</span> Virtual <span className="text-[#4169E1]">AI</span> Teachers
@@ -94,10 +94,10 @@ function Header() {
 
                     {/* Subtitle */}
                     <motion.p
-                        className="text-gray-400 text-sm md:text-base max-w-[900px] mx-auto leading-relaxed opacity-80"
+                        className="text-gray-400 text-[15px] md:text-[25px] max-w-[900px] mx-auto leading-relaxed opacity-80"
                         variants={itemVariants}
                     >
-                        Ed-INAI gives students access to Virtual AI Teachers trained on their syllabus delivering live & recorded classes, instant doubt solving, and personalized learning support 24×7.
+                        edInai gives students access to Virtual AI Teachers trained on their syllabus delivering live & recorded classes, instant doubt solving, and personalized learning support 24×7.
                     </motion.p>
                 </div>
 

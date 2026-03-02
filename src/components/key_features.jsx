@@ -72,11 +72,11 @@ const KeyFeatures = () => {
                 variants={itemVariants}
             >
                 <div className="flex items-center gap-4 mb-3 border-x-2 border-white px-6 py-1">
-                    <h2 className="text-xl md:text-2xl font-bold text-white tracking-widest uppercase">
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-widest uppercase">
                         KEY FEATURES FOR STUDENTS
                     </h2>
                 </div>
-                <p className="text-gray-400 text-sm tracking-wide font-medium">
+                <p className="text-[15px] md:text-[25px] text-gray-400 tracking-wide font-medium">
                     "Interactive lessons, real-time feedback, and smarter learning tools."
                 </p>
             </motion.div>

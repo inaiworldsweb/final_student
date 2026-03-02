@@ -11,7 +11,7 @@ const testimonials = [
         author: "Class 12 Student"
     },
     {
-        quote: "ED-INAI makes learning complex topics incredibly simple and fun.",
+        quote: "edInai makes learning complex topics incredibly simple and fun.",
         author: "JEE Aspirant"
     }
 ];
@@ -87,12 +87,12 @@ const StudentTestimonial = () => {
             >
                 <div className="flex items-center gap-4 mb-4">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide uppercase">
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
                         STUDENT TESTIMONIALS
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-gray-300 text-sm tracking-wide font-medium">
+                <p className="text-[15px] md:text-[25px] text-gray-300 tracking-wide font-medium">
                     What's our user says about us
                 </p>
             </motion.div>

@@ -45,11 +45,15 @@ const MeetYourTeacher = () => {
                 {/* Heading */}
                 <div className="relative z-10 flex flex-col items-center">
                     <div className="mb-3 border border-white/30 px-8 py-2 backdrop-blur-sm rounded-none">
-                        <h2 className="text-xl md:text-xl font-bold text-white tracking-[0.2em] uppercase">
-                            MEET YOUR AI TEACHERS <span className="opacity-70 font-normal">&lt;/&gt;</span>
+                        {/* Mobile: Multi-line, Desktop: Single line */}
+                        <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-[0.2em] uppercase text-center">
+                            <span className="block md:hidden">MEET YOUR</span>
+                            <span className="block md:hidden">AI</span>
+                            <span className="block md:hidden">TEACHERS</span>
+                            <span className="hidden md:block whitespace-nowrap">MEET YOUR AI TEACHERS</span>
                         </h2>
                     </div>
-                    <p className="text-gray-300 text-xs md:text-sm tracking-wide font-medium">
+                    <p className="text-[15px] md:text-[25px] text-gray-300 tracking-wide font-medium">
                         Three AI Teachers. One Learning Goal: Your Success.
                     </p>
                 </div>

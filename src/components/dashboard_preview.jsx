@@ -23,12 +23,12 @@ const DashboardPreview = () => {
             <div className="relative z-10 flex flex-col items-center mb-10 text-center">
                 <div className="flex items-center gap-4 mb-4">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide uppercase">
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
                         STUDENT DASHBOARD PREVIEW
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-gray-400 text-sm tracking-wide font-medium max-w-2xl">
+                <p className="text-[15px] md:text-[25px] text-gray-400 tracking-wide font-medium max-w-2xl">
                     Students get a simple, clutter-free dashboard where everything is organized and never overwhelming.
                 </p>
             </div>

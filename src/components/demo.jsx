@@ -61,7 +61,7 @@ const Demo = () => {
 
                     {/* Heading */}
                     <motion.h2
-                        className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight"
+                        className="text-[25px] md:text-[40px] font-bold text-white mb-6 leading-tight"
                         variants={itemVariants}
                     >
                         See How Students Learn with AI
@@ -69,7 +69,7 @@ const Demo = () => {
 
                     {/* Bullet Points */}
                     <motion.ul
-                        className="text-gray-400 space-y-3 mb-8 text-base md:text-lg"
+                        className="text-gray-400 space-y-3 mb-8 text-[15px] md:text-[25px]"
                         variants={containerVariants}
                     >
                         <motion.li className="flex items-center gap-3" variants={itemVariants}>

@@ -132,10 +132,10 @@ const StudentStruggle = () => {
 
             {/* Heading Section */}
             <motion.div className="text-center mb-8" variants={itemVariants}>
-                <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+                <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-4 tracking-tight">
                     Why Students Struggle in Traditional Learning
                 </h2>
-                <p className="text-gray-400 text-xs md:text-lg max-w-3xl mx-auto">
+                <p className="text-[15px] md:text-[25px] text-gray-400 max-w-3xl mx-auto">
                     Most students want to understand concepts clearly — but face daily challenges:
                 </p>
             </motion.div>

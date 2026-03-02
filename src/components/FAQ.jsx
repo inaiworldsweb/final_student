@@ -89,7 +89,7 @@ const FAQ = () => {
             answer: "Yes. AI generates notes and summaries automatically."
         },
         {
-            question: "Is ED-INAI difficult to use?",
+            question: "Is edInai difficult to use?",
             answer: "No. It's designed to be simple and student-friendly."
         }
     ];
@@ -112,7 +112,7 @@ const FAQ = () => {
                 className="w-full md:w-1/3 flex flex-col items-start relative z-10"
                 variants={itemVariants}
             >
-                <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+                <h2 className="text-[25px] md:text-[40px] font-bold text-white leading-tight">
                     Frequently Asked <br />Questions
                 </h2>
 

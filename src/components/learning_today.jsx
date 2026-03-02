@@ -52,14 +52,14 @@ const LearningToday = () => {
                     variants={containerVariants}
                 >
                     <motion.h2
-                        className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight tracking-tight"
+                        className="text-[25px] md:text-[40px] font-bold text-white mb-4 leading-tight tracking-tight"
                         variants={itemVariants}
                     >
                         Start Learning Smarter<br />with AI Today
                     </motion.h2>
 
                     <motion.p
-                        className="text-gray-200 text-base md:text-lg mb-8 max-w-2xl font-medium opacity-90"
+                        className="text-gray-200 text-[15px] md:text-[25px] mb-8 max-w-2xl font-medium opacity-90"
                         variants={itemVariants}
                     >
                         Don't let doubts slow you down.<br className="hidden md:block" />

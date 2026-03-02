@@ -30,7 +30,7 @@ const LearningFlow = () => {
     return (
         <section id="learning-flow" className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center">
 
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 tracking-tight text-center">
+            <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-10 tracking-tight text-center">
                 Simple & Effective Learning Flow
             </h2>
 
