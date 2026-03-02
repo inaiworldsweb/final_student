@@ -29,7 +29,7 @@ function Home() {
                 <div className="w-px h-full bg-[#333] mx-auto"></div>
             </div>
 
-            <div className="w-full mx-auto relative z-10 flex flex-col items-center">
+            <div className="w-full mx-auto relative z-10 flex flex-col items-center gap-8">
                 {/* Header Component */}
                 <Header />
                 {/* Student Struggle Component */}
@@ -37,11 +37,11 @@ function Home() {
                 {/* Personal AI Teacher Comparison Component */}
                 <PersonalAITeacher />
                 {/* What is ED-INAI Component */}                
-                    <ED_INAI />
+                <ED_INAI />
                 {/* Meet Your AI Teacher Component */}
-                    <MeetYourTeacher />
+                <MeetYourTeacher />
                 {/* Learning Flow Component */}
-                    <LearningFlow />
+                <LearningFlow />
                 {/* Key Features for Students Component */}
                 <KeyFeatures />
                 {/* Why Students Love ED-INAI Component */}
@@ -49,9 +49,9 @@ function Home() {
                 {/* Who is Ed-Inai For Component */}
                 <EdInaiFor />
                 {/* Dashboard Preview Component */}
-                    <DashboardPreview />
+                <DashboardPreview />
                 {/* Watch Demo Component */}
-                    <Demo />
+                <Demo />
                 {/* Student Testimonials Component */}
                 <StudentTestimonial />
                 {/* Start Learning Today Component */}

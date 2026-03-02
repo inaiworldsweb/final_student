@@ -31,14 +31,14 @@ const LearningToday = () => {
 
     return (
         <motion.section
-            className="w-full max-w-[1050px] mx-auto px-4 py-12"
+            className="w-full max-w-[1050px] mx-auto px-4 py-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={containerVariants}
         >
             <motion.div
-                className="w-full rounded-3xl overflow-hidden relative flex flex-col items-center justify-center text-center py-12 px-6 md:px-12 shadow-2xl"
+                className="w-full rounded-3xl overflow-hidden relative flex flex-col items-center justify-center text-center py-6 px-6 md:px-12 shadow-2xl"
                 style={{
                     backgroundImage: `url(${bgImage})`,
                     backgroundSize: 'cover',
@@ -52,14 +52,14 @@ const LearningToday = () => {
                     variants={containerVariants}
                 >
                     <motion.h2
-                        className="text-[25px] md:text-[40px] font-bold text-white mb-4 leading-tight tracking-tight"
+                        className="text-[25px] md:text-[40px] font-bold text-white mb-2 leading-tight tracking-tight"
                         variants={itemVariants}
                     >
                         Start Learning Smarter<br />with AI Today
                     </motion.h2>
 
                     <motion.p
-                        className="text-gray-200 text-[15px] md:text-[25px] mb-8 max-w-2xl font-medium opacity-90"
+                        className="text-gray-200 text-[16px] mb-4 max-w-2xl font-medium opacity-90"
                         variants={itemVariants}
                     >
                         Don't let doubts slow you down.<br className="hidden md:block" />

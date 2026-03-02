@@ -19,24 +19,24 @@ const TargetCard = ({ title, description }) => {
 
 const EdInaiFor = () => {
     return (
-        <section className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center">
+        <section className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Heading */}
-            <div className="relative z-10 flex flex-col items-center mb-10 text-center">
-                <div className="flex items-center gap-4 mb-4">
+            <div className="relative z-10 flex flex-col items-center mb-4 text-center">
+                <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
                         WHO IS edInai FOR? 
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-[15px] md:text-[25px] text-gray-300 tracking-wide font-medium">
+                <p className="text-[16px] text-gray-300 tracking-wide font-medium">
                     Perfect For Students From
                 </p>
             </div>
 
             {/* Grid Container */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full relative z-10">
 
                 {/* 1. Schools */}
                 <TargetCard

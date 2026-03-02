@@ -20,7 +20,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
 
 const ED_INAI = () => {
     return (
-        <section id="what-is-edinai" className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center">
+        <section id="what-is-edinai" className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Main Dark Container */}
             <div className="relative w-full bg-[#030303] border border-white/10 rounded-[40px] px-6 py-8 md:px-8 md:py-12 flex flex-col items-center text-center overflow-hidden shadow-2xl">
@@ -30,7 +30,7 @@ const ED_INAI = () => {
                 <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
                 {/* Heading */}
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase whitespace-nowrap">
                         WHAT IS edInai?
@@ -39,12 +39,12 @@ const ED_INAI = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-[15px] md:text-[25px] text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
+                <p className="text-[16px] text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed font-medium">>
                     edInai is an AI-powered learning platform where Virtual AI Teachers conduct interactive classes and help students learn better through conversation, visuals, and real-time support.
                 </p>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full">
 
                     {/* Card 1 - Purple */}
                     <FeatureCard

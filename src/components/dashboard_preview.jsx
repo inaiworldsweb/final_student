@@ -17,24 +17,24 @@ const FeaturePill = ({ text }) => {
 
 const DashboardPreview = () => {
     return (
-        <section id="dashboard-preview" className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center">
+        <section id="dashboard-preview" className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Heading */}
-            <div className="relative z-10 flex flex-col items-center mb-10 text-center">
-                <div className="flex items-center gap-4 mb-4">
+            <div className="relative z-10 flex flex-col items-center mb-4 text-center">
+                <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
                         STUDENT DASHBOARD PREVIEW
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-[15px] md:text-[25px] text-gray-400 tracking-wide font-medium max-w-2xl">
+                <p className="text-[16px] text-gray-400 tracking-wide font-medium max-w-2xl">
                     Students get a simple, clutter-free dashboard where everything is organized and never overwhelming.
                 </p>
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl mx-auto relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-5xl mx-auto relative z-10">
 
                 {/* 1 */}
                 <FeaturePill text="Access Live & Recorded Classes" />

@@ -28,11 +28,11 @@ const TeacherCard = ({ logo, name, role, description, showBorder = true }) => {
 
 const MeetYourTeacher = () => {
     return (
-        <section className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center">
+        <section className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Main Gradient Container */}
             <div
-                className="relative w-full rounded-[40px] p-6 md:p-10 flex flex-col items-center overflow-hidden border border-white/10"
+                className="relative w-full rounded-[40px] p-4 md:p-6 flex flex-col items-center overflow-hidden border border-white/10"
                 style={{
                     backgroundImage: `url(${BgImage})`,
                     backgroundSize: 'cover',
@@ -44,7 +44,7 @@ const MeetYourTeacher = () => {
 
                 {/* Heading */}
                 <div className="relative z-10 flex flex-col items-center">
-                    <div className="mb-3 border border-white/30 px-8 py-2 backdrop-blur-sm rounded-none">
+                    <div className="mb-2 border border-white/30 px-8 py-2 backdrop-blur-sm rounded-none">
                         {/* Mobile: Multi-line, Desktop: Single line */}
                         <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-[0.2em] uppercase text-center">
                             <span className="block md:hidden">MEET YOUR</span>
@@ -53,7 +53,7 @@ const MeetYourTeacher = () => {
                             <span className="hidden md:block whitespace-nowrap">MEET YOUR AI TEACHERS</span>
                         </h2>
                     </div>
-                    <p className="text-[15px] md:text-[25px] text-gray-300 tracking-wide font-medium">
+                    <p className="text-[16px] text-gray-300 tracking-wide font-medium">
                         Three AI Teachers. One Learning Goal: Your Success.
                     </p>
                 </div>

@@ -73,7 +73,7 @@ const StudentTestimonial = () => {
 
     return (
         <motion.section
-            className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -82,24 +82,24 @@ const StudentTestimonial = () => {
 
             {/* Heading */}
             <motion.div
-                className="relative z-10 flex flex-col items-center mb-16 text-center"
+                className="relative z-10 flex flex-col items-center mb-4 text-center"
                 variants={itemVariants}
             >
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
                         STUDENT TESTIMONIALS
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-[15px] md:text-[25px] text-gray-300 tracking-wide font-medium">
+                <p className="text-[16px] text-gray-300 tracking-wide font-medium">
                     What's our user says about us
                 </p>
             </motion.div>
 
             {/* Testimonial Slider Container */}
             <motion.div
-                className="relative w-full max-w-4xl flex items-center justify-center gap-8 md:gap-12"
+                className="relative w-full max-w-4xl flex items-center justify-center gap-4 md:gap-6"
                 variants={itemVariants}
             >
 

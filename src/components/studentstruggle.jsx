@@ -123,7 +123,7 @@ const IconCard = ({ icon, color, glowColor, title, description }) => {
 const StudentStruggle = () => {
     return (
         <motion.section
-            className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -131,18 +131,18 @@ const StudentStruggle = () => {
         >
 
             {/* Heading Section */}
-            <motion.div className="text-center mb-8" variants={itemVariants}>
-                <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-4 tracking-tight">
+            <motion.div className="text-center mb-4" variants={itemVariants}>
+                <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-2 tracking-tight">
                     Why Students Struggle in Traditional Learning
                 </h2>
-                <p className="text-[15px] md:text-[25px] text-gray-400 max-w-3xl mx-auto">
+                <p className="text-[16px] text-gray-400 max-w-3xl mx-auto">
                     Most students want to understand concepts clearly — but face daily challenges:
                 </p>
             </motion.div>
 
             {/* Cards Container - Horizontal Row */}
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full"
+                className="grid grid-cols-1 md:grid-cols-3 gap-3 w-full"
                 variants={containerVariants}
             >
 

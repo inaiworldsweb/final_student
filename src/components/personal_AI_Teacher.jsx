@@ -330,7 +330,7 @@ const PersonalAITeacher = () => {
         <motion.section
             ref={sectionRef}
             id="ai-teachers"
-            className="relative w-full min-h-screen py-10 flex flex-col items-center justify-center overflow-hidden"
+            className="relative w-full min-h-screen py-4 flex flex-col items-center justify-center overflow-hidden"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -342,7 +342,7 @@ const PersonalAITeacher = () => {
 
             {/* Heading */}
             <motion.div
-                className="text-center mb-6 md:mb-8 px-4 relative z-10"
+                className="text-center mb-4 md:mb-6 px-4 relative z-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -350,7 +350,7 @@ const PersonalAITeacher = () => {
                 <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-2 md:mb-3 leading-tight">
                     Your Personal AI Teacher – Always Available
                 </h2>
-                <p className="text-[15px] md:text-[25px] text-gray-400 max-w-2xl mx-auto px-2 md:px-0">
+                <p className="text-[16px] text-gray-400 max-w-2xl mx-auto px-2 md:px-0">
                     edInai solves these problems by giving every student their own AI teacher who explains topics clearly, answers doubts instantly, and helps revise concepts anytime.
                 </p>
             </motion.div>

@@ -32,7 +32,7 @@ const Demo = () => {
     return (
         <motion.section
             id="watch-demo"
-            className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -41,7 +41,7 @@ const Demo = () => {
 
             {/* Main Container */}
             <motion.div
-                className="relative w-full bg-[#050505] border border-white/10 rounded-[30px] p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 overflow-hidden shadow-2xl"
+                className="relative w-full bg-[#050505] border border-white/10 rounded-[30px] p-4 md:p-6 flex flex-col md:flex-row items-center gap-4 overflow-hidden shadow-2xl"
                 variants={itemVariants}
             >
 
@@ -53,7 +53,7 @@ const Demo = () => {
 
                     {/* Label */}
                     <motion.div
-                        className="flex items-center gap-2 mb-4 border-l-2 border-white pl-3 py-1"
+                        className="flex items-center gap-2 mb-2 border-l-2 border-white pl-3 py-1"
                         variants={itemVariants}
                     >
                         Watch Demo
@@ -61,7 +61,7 @@ const Demo = () => {
 
                     {/* Heading */}
                     <motion.h2
-                        className="text-[25px] md:text-[40px] font-bold text-white mb-6 leading-tight"
+                        className="text-[25px] md:text-[40px] font-bold text-white mb-3 leading-tight"
                         variants={itemVariants}
                     >
                         See How Students Learn with AI
@@ -69,7 +69,7 @@ const Demo = () => {
 
                     {/* Bullet Points */}
                     <motion.ul
-                        className="text-gray-400 space-y-3 mb-8 text-[15px] md:text-[25px]"
+                        className="text-gray-400 space-y-2 mb-4 text-[16px]"
                         variants={containerVariants}
                     >
                         <motion.li className="flex items-center gap-3" variants={itemVariants}>

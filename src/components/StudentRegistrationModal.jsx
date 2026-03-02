@@ -75,7 +75,7 @@ const StudentRegistrationModal = ({ isOpen, onClose }) => {
                             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
                                 Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">ED Inai</span> Journey
                             </h2>
-                            <p className="text-gray-400 text-sm">Join Ed-INAI and experience the future of learning.</p>
+                            <p className="text-gray-400 text-sm">Join edInai and experience the future of learning.</p>
                         </div>
 
                         {/* Form */}

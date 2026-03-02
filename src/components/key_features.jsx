@@ -59,7 +59,7 @@ const FeatureItem = ({ icon, title, description }) => {
 const KeyFeatures = () => {
     return (
         <motion.section
-            className="relative w-full max-w-[1050px] mx-auto px-4 py-12 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -68,22 +68,22 @@ const KeyFeatures = () => {
 
             {/* Heading */}
             <motion.div
-                className="relative z-10 flex flex-col items-center mb-8 text-center"
+                className="relative z-10 flex flex-col items-center mb-4 text-center"
                 variants={itemVariants}
             >
-                <div className="flex items-center gap-4 mb-3 border-x-2 border-white px-6 py-1">
+                <div className="flex items-center gap-4 mb-2 border-x-2 border-white px-6 py-1">
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-widest uppercase">
                         KEY FEATURES FOR STUDENTS
                     </h2>
                 </div>
-                <p className="text-[15px] md:text-[25px] text-gray-400 tracking-wide font-medium">
+                <p className="text-[16px] text-gray-400 tracking-wide font-medium">
                     "Interactive lessons, real-time feedback, and smarter learning tools."
                 </p>
             </motion.div>
 
             {/* Features Grid */}
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full relative z-10"
+                className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full relative z-10"
                 variants={containerVariants}
             >
 
