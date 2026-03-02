@@ -62,7 +62,7 @@ const LoveCard = ({ icon, text, glowClass, iconBgClass, customBoxShadow }) => {
 const WhyStudentsLoveEdInai = () => {
     return (
         <motion.section
-            className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -82,12 +82,12 @@ const WhyStudentsLoveEdInai = () => {
                 >
                     <div className="flex items-center gap-4 mb-2">
                         <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                        <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
+                        <h2 className="text-[25px] md:text-[40px] font-bold text-white ">
                             WHY STUDENTS LOVE edInai
                         </h2>
                         <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     </div>
-                    <p className="text-[16px] text-gray-300 tracking-wide font-medium">
+                    <p className="text-[16px] text-gray-300  font-medium">
                         Learning Without Fear or Pressure
                     </p>
                 </motion.div>

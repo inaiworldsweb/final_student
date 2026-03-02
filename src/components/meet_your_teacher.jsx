@@ -13,7 +13,7 @@ const TeacherCard = ({ logo, name, role, description, showBorder = true }) => {
             </div>
 
             {/* Name */}
-            <h3 className="text-white font-bold text-xl tracking-wider mb-2 group-hover:text-white transition-colors">{name}</h3>
+            <h3 className="text-white font-bold text-xl mb-2 group-hover:text-white transition-colors">{name}</h3>
 
             {/* Role */}
             <p className="text-white font-semibold text-sm mb-4 group-hover:text-white transition-colors">{role}</p>
@@ -28,7 +28,7 @@ const TeacherCard = ({ logo, name, role, description, showBorder = true }) => {
 
 const MeetYourTeacher = () => {
     return (
-        <section className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
+        <section className="relative w-full max-w-[1050px] mt-10 mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Main Gradient Container */}
             <div

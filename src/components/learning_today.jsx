@@ -31,7 +31,7 @@ const LearningToday = () => {
 
     return (
         <motion.section
-            className="w-full max-w-[1050px] mx-auto px-4 py-4"
+            className="w-full max-w-[1050px] mt-12 mx-auto px-4 py-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}

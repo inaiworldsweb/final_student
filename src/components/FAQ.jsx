@@ -100,7 +100,7 @@ const FAQ = () => {
 
     return (
         <motion.footer
-            className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col md:flex-row items-start justify-between gap-4 md:gap-8"
+            className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col md:flex-row items-start justify-between gap-4 md:gap-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}

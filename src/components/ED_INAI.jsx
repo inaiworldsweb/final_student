@@ -11,7 +11,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
             <div className={`absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t ${shadowClass} opacity-20 blur-2xl group-hover:opacity-30 transition-opacity`}></div>
 
             {/* Text */}
-            <h3 className="text-white font-bold text-2xl relative z-10 leading-snug tracking-wide drop-shadow-md">
+            <h3 className="text-white font-bold text-xl relative z-10 leading-snug tracking-wide drop-shadow-md">
                 {text}
             </h3>
         </div>
@@ -20,7 +20,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
 
 const ED_INAI = () => {
     return (
-        <section id="what-is-edinai" className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
+        <section id="what-is-edinai" className="relative w-full max-w-[1050px] mx-auto md:mt-15 px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Main Dark Container */}
             <div className="relative w-full bg-[#030303] border border-white/10 rounded-[40px] px-6 py-8 md:px-8 md:py-12 flex flex-col items-center text-center overflow-hidden shadow-2xl">
@@ -32,14 +32,14 @@ const ED_INAI = () => {
                 {/* Heading */}
                 <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase whitespace-nowrap">
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white  whitespace-nowrap">
                         WHAT IS edInai?
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
 
                 {/* Description */}
-                <p className="text-[16px] text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed font-medium">>
+                <p className="text-[16px] text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed font-medium">
                     edInai is an AI-powered learning platform where Virtual AI Teachers conduct interactive classes and help students learn better through conversation, visuals, and real-time support.
                 </p>
 

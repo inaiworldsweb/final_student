@@ -17,7 +17,7 @@ const FeaturePill = ({ text }) => {
 
 const DashboardPreview = () => {
     return (
-        <section id="dashboard-preview" className="relative w-full max-w-[1050px] mx-auto px-4 py-4 flex flex-col items-center justify-center">
+        <section id="dashboard-preview" className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Heading */}
             <div className="relative z-10 flex flex-col items-center mb-4 text-center">
