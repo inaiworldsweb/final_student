@@ -25,12 +25,12 @@ const EdInaiFor = () => {
             <div className="relative z-10 flex flex-col items-center mb-16 text-center">
                 <div className="flex items-center gap-4 mb-4">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide uppercase">
+                    <h2 className="text-2xl md:text-3xl font-bold text-white  uppercase">
                         WHO IS ED-INAI FOR? 
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-gray-300 text-sm tracking-wide font-medium">
+                <p className="text-gray-300 text-sm  font-medium">
                     Perfect For Students From
                 </p>
             </div>

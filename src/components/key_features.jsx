@@ -46,7 +46,7 @@ const FeatureItem = ({ icon, title, description }) => {
             </motion.div>
 
             {/* Title */}
-            <h3 className="text-white font-bold text-xl mb-3 group-hover:text-blue-400 transition-colors">{title}</h3>
+            <h3 className="text-white font-bold text-xl mb-3 group-hover:bg-gradient-to-r group-hover:from-blue-300 group-hover:via-blue-500 group-hover:to-blue-700 group-hover:bg-clip-text group-hover:text-transparent transition-colors">{title}</h3>
 
             {/* Description */}
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -72,11 +72,11 @@ const KeyFeatures = () => {
                 variants={itemVariants}
             >
                 <div className="flex items-center gap-4 mb-2 border-x-2 border-white px-6 py-1">
-                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-widest uppercase">
-                        KEY FEATURES FOR STUDENTS
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white ">
+                        Key Features For Students
                     </h2>
                 </div>
-                <p className="text-[16px] text-gray-400 tracking-wide font-medium">
+                <p className="text-[16px] text-gray-400 font-medium">
                     "Interactive lessons, real-time feedback, and smarter learning tools."
                 </p>
             </motion.div>

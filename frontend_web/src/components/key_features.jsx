@@ -32,11 +32,11 @@ const KeyFeatures = () => {
             {/* Heading */}
             <div className="relative z-10 flex flex-col items-center mb-16 text-center">
                 <div className="flex items-center gap-4 mb-3 border-x-2 border-white px-6 py-1">
-                    <h2 className="text-xl md:text-2xl font-bold text-white tracking-widest uppercase">
+                    <h2 className="text-xl md:text-2xl font-bold text-white st uppercase">
                         KEY FEATURES FOR STUDENTS 
                         </h2>
                 </div>
-                <p className="text-gray-400 text-sm tracking-wide font-medium">
+                <p className="text-gray-400 text-sm  font-medium">
                     "Interactive lessons, real-time feedback, and smarter learning tools."
                 </p>
             </div>

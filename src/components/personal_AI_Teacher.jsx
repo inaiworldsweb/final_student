@@ -199,7 +199,7 @@ const StackCard = memo(({ data, index, stackPosition, isActive }) => {
                     <div className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold ${isActive ? 'bg-cyan-500/30 text-cyan-300' : 'bg-white/5 text-gray-500'}`}>
                         {index + 1}
                     </div>
-                    <span className={`text-xs uppercase tracking-wider font-bold ${isActive ? 'text-cyan-400' : 'text-gray-500'}`}>
+                    <span className={`text-xs uppercase r font-bold ${isActive ? 'text-cyan-400' : 'text-gray-500'}`}>
                         {isActive ? 'Now Viewing' : 'Previous'}
                     </span>
                     {isActive && (

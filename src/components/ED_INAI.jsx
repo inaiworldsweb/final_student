@@ -11,7 +11,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
             <div className={`absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t ${shadowClass} opacity-20 blur-2xl group-hover:opacity-30 transition-opacity`}></div>
 
             {/* Text */}
-            <h3 className="text-white font-bold text-xl relative z-10 leading-snug tracking-wide drop-shadow-md">
+            <h3 className="text-white font-bold text-xl relative z-10 leading-snug  drop-shadow-md">
                 {text}
             </h3>
         </div>
@@ -32,9 +32,12 @@ const ED_INAI = () => {
                 {/* Heading */}
                 <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-[25px] md:text-[40px] font-bold text-white  whitespace-nowrap">
-                        WHAT IS edInai?
-                    </h2>
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white whitespace-nowrap">
+  What Is{" "}
+  <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">
+    edInai
+  </span>?  
+</h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
 

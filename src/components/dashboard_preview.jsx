@@ -1,16 +1,30 @@
 import React from 'react';
 
-const FeaturePill = ({ text }) => {
+const FeaturePill = ({ text, glowClass, borderHoverClass, dotGlow }) => {
     return (
         <div
-            className="border border-[#FFFFFF1A] rounded-xl px-8 py-6 flex items-center justify-start text-left hover:border-white/20 transition-colors w-full"
+            className={`group relative border border-[#FFFFFF1A] rounded-xl px-8 py-6 flex items-center justify-start text-left 
+                       transition-all duration-500 ease-out cursor-pointer overflow-hidden w-full
+                       hover:-translate-y-1 ${borderHoverClass} ${glowClass}`}
             style={{
-                background: 'linear-gradient(80.42deg, rgba(0, 0, 0, 0.16) 25.25%, rgba(83, 84, 108, 0.16) 98.05%)',
-                backdropFilter: 'blur(5px)'
+                background: 'linear-gradient(80.42deg, rgba(0, 0, 0, 0.2) 25.25%, rgba(83, 84, 108, 0.2) 98.05%)',
+                backdropFilter: 'blur(10px)'
             }}
         >
-            <span className="w-1.5 h-1.5 rounded-full bg-white mr-4 shrink-0"></span>
-            <span className="text-white font-medium text-lg leading-snug">{text}</span>
+            {/* Inner Gradient Shine */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+            {/* Content Section */}
+            <div className="flex items-center relative z-10 w-full">
+                {/* Glowing Dot */}
+                <span className={`w-2 h-2 rounded-full bg-white mr-4 shrink-0 transition-all duration-300 
+                                 group-hover:scale-125 ${dotGlow}`}>
+                </span>
+
+                <span className="text-white font-medium text-lg leading-snug group-hover:text-white transition-colors duration-300">
+                    {text}
+                </span>
+            </div>
         </div>
     );
 };
@@ -20,33 +34,49 @@ const DashboardPreview = () => {
         <section id="dashboard-preview" className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Heading */}
-            <div className="relative z-10 flex flex-col items-center mb-4 text-center">
+            <div className="relative z-10 flex flex-col items-center mb-10 text-center">
                 <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
-                        STUDENT DASHBOARD PREVIEW
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white ">
+                        Student Dashboard Preview
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-[16px] text-gray-400 tracking-wide font-medium max-w-2xl">
+                <p className="text-[16px] text-gray-400 font-medium max-w-2xl">
                     Students get a simple, clutter-free dashboard where everything is organized and never overwhelming.
                 </p>
             </div>
 
-            {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-5xl mx-auto relative z-10">
+            {/* Features Grid with Intense Border Glow */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-5xl mx-auto relative z-10">
 
-                {/* 1 */}
-                <FeaturePill text="Access Live & Recorded Classes" />
+                <FeaturePill 
+                    text="Access Live & Recorded Classes" 
+                    borderHoverClass="hover:border-purple-500/80"
+                    glowClass="hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
+                    dotGlow="group-hover:bg-purple-400 group-hover:shadow-[0_0_10px_#a855f7]"
+                />
 
-                {/* 2 */}
-                <FeaturePill text="Download Notes & Revision Material" />
+                <FeaturePill 
+                    text="Download Notes & Revision Material" 
+                    borderHoverClass="hover:border-emerald-500/80"
+                    glowClass="hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]"
+                    dotGlow="group-hover:bg-emerald-400 group-hover:shadow-[0_0_10px_#10b981]"
+                />
 
-                {/* 3 */}
-                <FeaturePill text="Attempt Quizzes" />
+                <FeaturePill 
+                    text="Attempt Quizzes" 
+                    borderHoverClass="hover:border-pink-500/80"
+                    glowClass="hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
+                    dotGlow="group-hover:bg-pink-400 group-hover:shadow-[0_0_10px_#ec4899]"
+                />
 
-                {/* 4 */}
-                <FeaturePill text="Track Learning Progress Visually" />
+                <FeaturePill 
+                    text="Track Learning Progress Visually" 
+                    borderHoverClass="hover:border-orange-500/80"
+                    glowClass="hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]"
+                    dotGlow="group-hover:bg-orange-400 group-hover:shadow-[0_0_10px_#f97316]"
+                />
 
             </div>
 

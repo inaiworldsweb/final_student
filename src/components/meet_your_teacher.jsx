@@ -53,7 +53,7 @@ const MeetYourTeacher = () => {
                             <span className="hidden md:block whitespace-nowrap">MEET YOUR AI TEACHERS</span>
                         </h2>
                     </div>
-                    <p className="text-[16px] text-gray-300 tracking-wide font-medium">
+                    <p className="text-[16px] text-gray-300  font-medium">
                         Three AI Teachers. One Learning Goal: Your Success.
                     </p>
                 </div>

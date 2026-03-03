@@ -87,12 +87,12 @@ const StudentTestimonial = () => {
             >
                 <div className="flex items-center gap-4 mb-2">
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
-                    <h2 className="text-[25px] md:text-[40px] font-bold text-white tracking-wide uppercase">
-                        STUDENT TESTIMONIALS
+                    <h2 className="text-[25px] md:text-[40px] font-bold text-white  uppercase">
+                        Student Testimonials
                     </h2>
                     <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
-                <p className="text-[16px] text-gray-300 tracking-wide font-medium">
+                <p className="text-[16px] text-gray-300 font-medium">
                     What's our user says about us
                 </p>
             </motion.div>
@@ -139,7 +139,7 @@ const StudentTestimonial = () => {
                                 <p className="text-gray-400 text-lg md:text-xl italic mb-6 leading-relaxed">
                                     "{testimonials[currentIndex].quote}"
                                 </p>
-                                <h4 className="text-white font-bold text-xl md:text-2xl tracking-wide">
+                                <h4 className="text-white font-bold text-xl md:text-2xl ">
                                     {testimonials[currentIndex].author}
                                 </h4>
                             </div>

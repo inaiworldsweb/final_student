@@ -13,7 +13,7 @@ const TeacherCard = ({ logo, name, role, description, showBorder = true }) => {
             </div>
 
             {/* Name */}
-            <h3 className="text-white font-bold text-xl tracking-wider mb-2 group-hover:text-white transition-colors">{name}</h3>
+            <h3 className="text-white font-bold text-xl r mb-2 group-hover:text-white transition-colors">{name}</h3>
 
             {/* Role */}
             <p className="text-white font-semibold text-sm mb-4 group-hover:text-white transition-colors">{role}</p>
@@ -49,7 +49,7 @@ const MeetYourTeacher = () => {
                             MEET YOUR AI TEACHERS <span className="opacity-70 font-normal">&lt;/&gt;</span>
                         </h2>
                     </div>
-                    <p className="text-gray-300 text-xs md:text-sm tracking-wide font-medium">
+                    <p className="text-gray-300 text-xs md:text-sm  font-medium">
                         Three AI Teachers. One Learning Goal: Your Success.
                     </p>
                 </div>

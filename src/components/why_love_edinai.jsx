@@ -83,7 +83,7 @@ const WhyStudentsLoveEdInai = () => {
                     <div className="flex items-center gap-4 mb-2">
                         <div className="w-0.5 h-8 bg-white opacity-80"></div>
                         <h2 className="text-[25px] md:text-[40px] font-bold text-white ">
-                            WHY STUDENTS LOVE edInai
+                            Why Students Love <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">edInai</span>?
                         </h2>
                         <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     </div>

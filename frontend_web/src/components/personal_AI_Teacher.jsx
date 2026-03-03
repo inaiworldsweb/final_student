@@ -20,7 +20,7 @@ const ComparisonRow = ({ feature, traditional, ai, hoveredCol, setHoveredCol }) 
                 onMouseEnter={() => setHoveredCol(0)}
                 onMouseLeave={() => setHoveredCol(null)}
             >
-                <span className={`font-semibold text-lg tracking-wide ${hoveredCol === 0 ? 'text-white' : ''} transition-colors`}>{feature}</span>
+                <span className={`font-semibold text-lg  ${hoveredCol === 0 ? 'text-white' : ''} transition-colors`}>{feature}</span>
             </div>
 
             {/* Traditional (Column 1) */}
@@ -96,7 +96,7 @@ const PersonalAITeacher = () => {
                         onMouseEnter={() => setHoveredCol(0)}
                         onMouseLeave={() => setHoveredCol(null)}
                     >
-                        <div className="text-center md:text-left font-bold text-white text-lg tracking-wide">Feature</div>
+                        <div className="text-center md:text-left font-bold text-white text-lg ">Feature</div>
                     </div>
 
                     {/* Traditional Header (Col 1) */}
@@ -105,7 +105,7 @@ const PersonalAITeacher = () => {
                         onMouseEnter={() => setHoveredCol(1)}
                         onMouseLeave={() => setHoveredCol(null)}
                     >
-                        <div className="text-center md:text-left font-bold text-white text-lg tracking-wide">Traditional Classes</div>
+                        <div className="text-center md:text-left font-bold text-white text-lg ">Traditional Classes</div>
                     </div>
 
                     {/* AI Teachers Header (Col 2) */}
@@ -114,7 +114,7 @@ const PersonalAITeacher = () => {
                         onMouseEnter={() => setHoveredCol(2)}
                         onMouseLeave={() => setHoveredCol(null)}
                     >
-                        <div className="text-center md:text-left font-bold text-white text-lg tracking-wide flex items-center gap-2">
+                        <div className="text-center md:text-left font-bold text-white text-lg  flex items-center gap-2">
                             ED-INAI AI Teachers
                         </div>
                     </div>
