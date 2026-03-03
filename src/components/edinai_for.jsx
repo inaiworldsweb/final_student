@@ -32,11 +32,9 @@ const EdInaiFor = () => {
             {/* Heading */}
             <div className="relative z-10 flex flex-col items-center mb-10 text-center">
                 <div className="flex items-center gap-4 mb-2">
-                    <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white">
                         Who Is <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">edInai</span> For? 
                     </h2>
-                    <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
                 <p className="text-[16px] text-gray-300 font-medium">
                     Perfect For Students From
