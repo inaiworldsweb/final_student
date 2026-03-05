@@ -108,7 +108,7 @@ function Header() {
                 >
                     <motion.button
                         onClick={() => setIsModalOpen(true)}
-                        className="text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-blue-500/20"
+                        className="text-white font-semibold text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
                         style={{ background: 'linear-gradient(90deg, #113BE1 0%, #4268FF 50.48%, #4062E3 72.41%, #113BE1 100%)' }}
                         whileHover={{ scale: 1.05, boxShadow: '0 20px 40px -10px rgba(65, 105, 225, 0.4)' }}
                         whileTap={{ scale: 0.98 }}
@@ -116,7 +116,7 @@ function Header() {
                         Start Learning Now
                     </motion.button>
                     <motion.button
-                        className="bg-transparent border border-white hover:border-gray-400 text-white font-medium text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:bg-white/5"
+                        className="bg-transparent border border-white hover:border-gray-400 text-white font-medium text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 hover:bg-white/5"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
