@@ -42,7 +42,6 @@ function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
             >
-                <img src={logo} alt="EDINAI Logo" className="h-28 md:h-36 w-auto" loading="eager" fetchpriority="high" />
             </motion.div>
 
             {/* Main Content Container - Fixed width 1050px for more side space */}

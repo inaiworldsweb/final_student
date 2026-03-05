@@ -93,7 +93,7 @@ const Demo = () => {
                     {/* Button */}
                     <motion.button
                         onClick={playVideo}
-                        className="px-8 py-3 bg-gradient-to-r from-blue-700 to-blue-900 text-white font-semibold rounded-full shadow-lg shadow-blue-900/40"
+                        className="px-8 py-3 bg-gradient-to-r from-blue-700 to-blue-900 text-white font-semibold rounded-[7px] cursor-pointer shadow-lg shadow-blue-900/40"
                         variants={itemVariants}
                         whileHover={{ scale: 1.05, boxShadow: '0 15px 30px -5px rgba(29, 78, 216, 0.5)' }}
                         whileTap={{ scale: 0.98 }}

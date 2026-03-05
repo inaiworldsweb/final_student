@@ -258,7 +258,7 @@ const StudentRegistrationModal = ({ isOpen, onClose }) => {
               {/* Submit Button */}
               <motion.button
                 type="submit"
-                className="w-full mt-6 text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-blue-500/20"
+                className="w-full mt-6 text-white font-semibold text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
                 style={{
                   background:
                     "linear-gradient(90deg, #113BE1 0%, #4268FF 50.48%, #4062E3 72.41%, #113BE1 100%)",

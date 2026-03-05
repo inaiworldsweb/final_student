@@ -36,11 +36,9 @@ const DashboardPreview = () => {
             {/* Heading */}
             <div className="relative z-10 flex flex-col items-center mb-10 text-center">
                 <div className="flex items-center gap-4 mb-2">
-                    <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white ">
                         Student Dashboard Preview
                     </h2>
-                    <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
                 <p className="text-[16px] text-gray-400 font-medium max-w-2xl">
                     Students get a simple, clutter-free dashboard where everything is organized and never overwhelming.

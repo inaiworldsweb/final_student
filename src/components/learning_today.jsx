@@ -68,7 +68,7 @@ const LearningToday = () => {
 
                     <motion.button
                         onClick={() => setIsModalOpen(true)}
-                        className="bg-white text-blue-900 font-bold py-4 px-10 rounded-xl shadow-lg text-lg"
+                        className="bg-white text-blue-900 font-bold py-4 px-10 rounded-[7px] cursor-pointer shadow-lg text-lg"
                         variants={itemVariants}
                         whileHover={{
                             scale: 1.08,

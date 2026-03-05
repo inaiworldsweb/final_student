@@ -100,11 +100,9 @@ const StudentTestimonial = () => {
                 variants={itemVariants}
             >
                 <div className="flex items-center gap-4 mb-2">
-                    <div className="w-0.5 h-8 bg-white opacity-80"></div>
                     <h2 className="text-[25px] md:text-[40px] font-bold text-white uppercase tracking-tight">
                         Student Testimonials
                     </h2>
-                    <div className="w-0.5 h-8 bg-white opacity-80"></div>
                 </div>
                 <p className="text-[16px] text-gray-400 font-medium">
                     What our users say about us
@@ -179,7 +177,7 @@ const StudentTestimonial = () => {
                             setDirection(index > currentIndex ? 1 : -1);
                             setCurrentIndex(index);
                         }}
-                        className={`h-1.5 rounded-full transition-all duration-300 ${
+                        className={`h-1.5 rounded-full cursor-pointer transition-all duration-300 ${
                             index === currentIndex ? 'w-8 bg-blue-500' : 'w-2 bg-gray-600'
                         }`}
                     />
