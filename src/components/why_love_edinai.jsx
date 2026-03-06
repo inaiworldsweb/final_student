@@ -30,7 +30,7 @@ const LoveCard = ({ icon, text, glowClass, iconBgClass, customBoxShadow }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="relative bg-[#050505] rounded-2xl p-4 md:p-6 flex items-center h-24 w-full overflow-hidden group"
+      className="relative bg-[#050505] rounded-2xl px-1 py-1 flex items-center w-full overflow-hidden group"
       style={{ boxShadow: customBoxShadow }}
       whileHover={{
         y: -5,
