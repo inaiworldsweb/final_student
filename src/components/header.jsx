@@ -116,7 +116,6 @@ function Header() {
                     </motion.button>
                     <motion.button
                         className="bg-transparent border border-white hover:border-gray-400 text-white font-medium text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 hover:bg-white/5"
-                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
                         Watch Demo
