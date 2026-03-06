@@ -115,7 +115,7 @@ const handleSmoothScroll = (e, href) => {
 const Footer = () => {
   return (
     <motion.footer
-      className="relative w-full bg-black border-t border-white/10 py-4 mt-12"
+      className="relative w-full bg-black border-t border-white/10 md:py-16 py-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
@@ -174,7 +174,7 @@ const Footer = () => {
         >
           {/* Copyright Text - Left */}
           <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
-             © 2026 by INAI Worlds Pvt. Ltd. All Rights Reserved
+            © 2026 by INAI Worlds Pvt. Ltd. All Rights Reserved
           </p>
 
           {/* Social Media Icons - Right */}

@@ -32,7 +32,7 @@ function Home() {
         <div className="w-px h-full bg-[#333] mx-auto"></div>
       </div>
 
-      <div className="w-full mx-auto relative z-10 flex flex-col items-center gap-8">
+      <div className="w-full mx-auto relative z-10 flex flex-col items-center">
         {/* Navbar Component */}
         <Navbar />
         {/* Header Component */}
