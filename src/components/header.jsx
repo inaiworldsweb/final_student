@@ -109,7 +109,7 @@ function Header() {
                         onClick={() => setIsModalOpen(true)}
                         className="text-white font-semibold text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
                         style={{ background: 'linear-gradient(90deg, #113BE1 0%, #4268FF 50.48%, #4062E3 72.41%, #113BE1 100%)' }}
-                        whileHover={{ scale: 1.05, boxShadow: '0 20px 40px -10px rgba(65, 105, 225, 0.4)' }}
+                        whileHover={{  boxShadow: '0 20px 40px -10px rgba(65, 105, 225, 0.4)' }}
                         whileTap={{ scale: 0.98 }}
                     >
                         Start Learning Now
