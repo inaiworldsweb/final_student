@@ -88,7 +88,7 @@ const StudentTestimonial = () => {
 
     return (
         <motion.section
-            className="relative w-full max-w-[1050px] mt-18 mx-auto px-4 py-8 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mt-18 mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}

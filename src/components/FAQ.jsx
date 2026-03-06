@@ -106,7 +106,7 @@ const FAQ = () => {
 
     return (
         <motion.section
-            className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-12 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12 bg-black"
+            className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12 bg-black"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}

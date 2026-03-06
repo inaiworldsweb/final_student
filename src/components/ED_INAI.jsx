@@ -20,7 +20,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
 
 const ED_INAI = () => {
     return (
-        <section id="what-is-edinai" className="relative w-full max-w-[1050px] mx-auto md:mt-15 px-4 py-4 flex flex-col items-center justify-center">
+        <section id="what-is-edinai" className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Main Dark Container */}
             <div className="relative w-full bg-[#030303] border border-white/10 rounded-[40px] px-6 py-8 md:px-8 md:py-12 flex flex-col items-center text-center overflow-hidden shadow-2xl">

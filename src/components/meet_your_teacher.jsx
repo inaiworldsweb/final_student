@@ -28,7 +28,7 @@ const TeacherCard = ({ logo, name, role, description, showBorder = true }) => {
 
 const MeetYourTeacher = () => {
     return (
-        <section className="relative w-full max-w-[1050px] mt-10 mx-auto px-4 py-4 flex flex-col items-center justify-center">
+        <section className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col items-center justify-center">
 
             {/* Main Gradient Container */}
             <div

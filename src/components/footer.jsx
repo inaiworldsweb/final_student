@@ -115,7 +115,7 @@ const handleSmoothScroll = (e, href) => {
 const Footer = () => {
   return (
     <motion.footer
-      className="relative w-full bg-black border-t border-white/10 py-8"
+      className="relative w-full bg-black border-t border-white/10 py-4 mt-12"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}

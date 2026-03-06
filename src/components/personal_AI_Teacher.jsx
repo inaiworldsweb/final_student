@@ -330,7 +330,7 @@ const PersonalAITeacher = () => {
         <motion.section
             ref={sectionRef}
             id="ai-teachers"
-            className="relative w-full min-h-screen py-4 flex flex-col items-center justify-center overflow-hidden"
+            className="relative w-full min-h-screen px-4 py-4 flex flex-col items-center justify-center overflow-hidden"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

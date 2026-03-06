@@ -32,7 +32,7 @@ const Demo = () => {
     return (
         <motion.section
             id="watch-demo"
-            className="relative w-full max-w-[1050px] mt-10 md:mt-18 mx-auto px-4 py-4 flex flex-col items-center justify-center"
+            className="relative w-full max-w-[1050px] mt-12 mx-auto px-4 py-4 flex flex-col items-center justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
