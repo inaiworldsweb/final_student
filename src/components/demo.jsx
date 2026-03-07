@@ -50,7 +50,7 @@ const Demo = () => {
         >
           {/* Label */}
           <motion.div
-            className="flex items-center gap-2 mb-2 border-l-2 border-white pl-3 py-1"
+            className="flex items-center mb-4 border-l-2 border-white pl-3 py-1"
             variants={itemVariants}
           >
             Watch Demo
@@ -58,7 +58,7 @@ const Demo = () => {
 
           {/* Heading */}
           <motion.h2
-            className="text-[25px] md:text-[40px] font-bold text-white mb-3 leading-tight"
+            className="text-[25px] md:text-[40px] font-bold text-white mb-6 leading-tight"
             variants={itemVariants}
           >
             See How Students Learn with AI

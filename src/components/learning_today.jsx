@@ -52,7 +52,7 @@ const LearningToday = () => {
           variants={containerVariants}
         >
           <motion.h2
-            className="text-[25px] md:text-[40px] font-bold text-white mb-2 leading-tight tracking-tight"
+            className="text-[25px] md:text-[40px] font-bold text-white mb-6 leading-tight "
             variants={itemVariants}
           >
             Start Learning Smarter
@@ -61,7 +61,7 @@ const LearningToday = () => {
           </motion.h2>
 
           <motion.p
-            className="text-gray-200 text-[16px] mb-4 max-w-2xl font-medium opacity-90"
+            className="text-gray-200 text-[16px] mb-6 max-w-2xl font-medium opacity-90"
             variants={itemVariants}
           >
             Don't let doubts slow you down.

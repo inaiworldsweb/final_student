@@ -100,15 +100,15 @@ const StudentTestimonial = () => {
     >
       {/* Heading */}
       <motion.div
-        className="relative z-10 flex flex-col items-center mb-10 text-center"
+        className="relative z-10 flex flex-col items-center text-center"
         variants={itemVariants}
       >
-        <div className="flex items-center gap-4 mb-2">
-          <h2 className="text-[25px] md:text-[40px] font-bold text-white uppercase tracking-tight">
+        <div className="flex items-center">
+          <h2 className="text-[25px] md:text-[40px] mb-6 font-bold text-white uppercase ">
             Student Testimonials
           </h2>
         </div>
-        <p className="text-[16px] text-gray-400 font-medium">
+        <p className="text-[16px] text-gray-400 mb-6 font-medium">
           What our users say about us
         </p>
       </motion.div>

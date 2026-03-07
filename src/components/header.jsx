@@ -99,7 +99,7 @@ function Header() {
             style={{ gap: "3px" }}
             variants={itemVariants}
           >
-            <h1 className="text-4xl md:text-4xl lg:text-[60px] font-bold leading-[1.1] tracking-tight text-white">
+            <h1 className="text-[25px] md:text-4xl lg:text-[60px] font-bold leading-[1.1] mb-6  text-white">
               <span className="block">Learn Smarter With</span>
               <span className="block mt-2">
                 India's <span className="text-[#4169E1]">First</span> Virtual{" "}
@@ -126,7 +126,7 @@ function Header() {
         >
           <motion.button
             onClick={() => setIsModalOpen(true)}
-            className="text-white font-semibold text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
+            className="text-white font-semibold text-base md:px-8 px-2 md:py-3.5 py-2 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
             style={{
               background:
                 "linear-gradient(90deg, #113BE1 0%, #4268FF 50.48%, #4062E3 72.41%, #113BE1 100%)",
@@ -139,7 +139,7 @@ function Header() {
             Start Learning Now
           </motion.button>
           <motion.button
-            className="bg-transparent border border-white hover:border-gray-400 text-white font-medium text-base px-8 py-3.5 rounded-[7px] cursor-pointer transition-all duration-300 hover:bg-white/5"
+            className="bg-transparent border border-white hover:border-gray-400 text-white font-medium text-base md:px-8 px-8 md:py-3.5 py-2 rounded-[7px] cursor-pointer transition-all duration-300 hover:bg-white/5"
             whileTap={{ scale: 0.98 }}
           >
             Watch Demo

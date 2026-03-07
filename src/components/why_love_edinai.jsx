@@ -79,7 +79,7 @@ const WhyStudentsLoveEdInai = () => {
           variants={itemVariants}
         >
           <div className="flex items-center gap-4 mb-2">
-            <h2 className="text-[25px] md:text-[40px] font-bold text-white ">
+            <h2 className="text-[25px] md:text-[40px] font-bold mb-6 text-white ">
               Why Students Love{" "}
               <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">
                 edInai
@@ -87,14 +87,14 @@ const WhyStudentsLoveEdInai = () => {
               ?
             </h2>
           </div>
-          <p className="text-[16px] md:text-[21px] text-gray-300  font-medium">
+          <p className="text-[16px] md:text-[21px] text-gray-300 mb-6 font-medium">
             Learning Without Fear or Pressure
           </p>
         </motion.div>
 
         {/* Cards Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-4xl mx-auto relative z-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-4xl mx-auto relative z-10"
           variants={containerVariants}
         >
           {/* 1. Purple - Never Miss a Lecture */}

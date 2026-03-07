@@ -32,8 +32,8 @@ const ED_INAI = () => {
         <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
         {/* Heading */}
-        <div className="flex items-center gap-4 mb-2">
-          <h2 className="text-[25px] md:text-[40px] font-bold text-white whitespace-nowrap">
+        <div className="flex items-center">
+          <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-6 whitespace-nowrap">
             What Is{" "}
             <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">
               edInai
@@ -43,7 +43,7 @@ const ED_INAI = () => {
         </div>
 
         {/* Description */}
-        <p className="text-[16px] text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed font-medium">
+        <p className="text-[16px] text-gray-300 max-w-4xl mx-auto mb-6 leading-relaxed font-medium">
           edInai is an AI-powered learning platform where Virtual AI Teachers
           conduct interactive classes and help students learn better through
           conversation, visuals, and real-time support.

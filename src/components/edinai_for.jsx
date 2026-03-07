@@ -30,9 +30,9 @@ const EdInaiFor = () => {
   return (
     <section className="relative w-full max-w-[1050px] mx-auto px-4 md:py-16 py-10 flex flex-col items-center justify-center">
       {/* Heading */}
-      <div className="relative z-10 flex flex-col items-center mb-10 text-center">
-        <div className="flex items-center gap-4 mb-2">
-          <h2 className="text-[25px] md:text-[40px] font-bold text-white">
+      <div className="relative z-10 flex flex-col items-center text-center">
+        <div className="flex items-center">
+          <h2 className="text-[25px] md:text-[40px] font-bold mb-6 text-white">
             Who Is{" "}
             <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">
               edInai
@@ -40,7 +40,7 @@ const EdInaiFor = () => {
             For?
           </h2>
         </div>
-        <p className="text-[16px] text-gray-300 font-medium">
+        <p className="text-[16px] text-gray-300 mb-6 font-medium">
           Perfect For Students From
         </p>
       </div>

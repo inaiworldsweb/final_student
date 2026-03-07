@@ -40,7 +40,7 @@ const LearningFlow = () => {
       id="learning-flow"
       className="relative w-full max-w-[1050px] mx-auto px-4 md:py-16 py-10 flex flex-col items-center justify-center"
     >
-      <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-4 text-center">
+      <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-6 text-center">
         Simple & Effective Learning Flow
       </h2>
 

@@ -18,7 +18,7 @@ function Navbar() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#010101]/80 to-[#010101]/40 backdrop-blur-md"></div>
 
         {/* Navbar Content */}
-        <div className="relative px-4 md:px-8 py-3 md:py-4 flex items-center justify-between max-w-full">
+        <div className="relative px-2 md:px-8 py-0 md:py-4 flex items-center justify-between max-w-full">
           {/* Logo on Left */}
           <motion.div
             className="flex items-center"
@@ -35,7 +35,7 @@ function Navbar() {
           {/* Demo Button on Right */}
           <motion.button
             onClick={() => setIsModalOpen(true)}
-            className="text-white font-semibold cursor-pointer text-base px-7 py-2.5 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
+            className="text-white text-[13px] font-semibold cursor-pointer text-base px-2 md:px-7 py-1 md:py-2.5 rounded-[7px] cursor-pointer transition-all duration-300 shadow-lg shadow-blue-500/20"
             style={{
               background:
                 "linear-gradient(90deg, #113BE1 0%, #4268FF 50.48%, #4062E3 72.41%, #113BE1 100%)",
