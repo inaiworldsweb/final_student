@@ -44,7 +44,7 @@ const LoveCard = ({ icon, text, glowClass, iconBgClass, customBoxShadow }) => {
 
       {/* Icon Box */}
       <motion.div
-        className={`relative z-10 w-16 h-16 rounded-lg ${iconBgClass} flex items-center justify-center mr-4 md:mr-6 shadow-[0_0_15px_rgba(0,0,0,0.5)] shrink-0`}
+        className={`relative z-10 w-16 h-16 rounded-lg ${iconBgClass} flex items-center justify-center mt-2 mr-4 md:mr-6 shadow-[0_0_15px_rgba(0,0,0,0.5)] shrink-0`}
         whileHover={{ scale: 1.1, rotate: 5 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
@@ -78,7 +78,7 @@ const WhyStudentsLoveEdInai = () => {
           className="relative z-10 flex flex-col items-center mb-4 text-center"
           variants={itemVariants}
         >
-          <div className="flex items-center gap-4 mb-2">
+          <div className="flex items-center">
             <h2 className="text-[25px] md:text-[40px] font-bold mb-6 text-white ">
               Why Students Love{" "}
               <span className="bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 bg-clip-text text-transparent">

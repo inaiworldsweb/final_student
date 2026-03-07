@@ -3,7 +3,7 @@ import React from "react";
 const FeatureCard = ({ text, shadowClass, customShadow }) => {
   return (
     <div
-      className={`relative bg-[#050505] rounded-2xl sm:p-6 p-2 flex items-center justify-center text-center min-h-[120px] w-full max-w-[280px] mx-auto overflow-hidden group transition-all duration-300 hover:-translate-y-1`}
+      className={`relative bg-[#050505] rounded-2xl sm:p-2 p-2 flex items-center justify-center text-center min-h-[120px] w-full max-w-[280px] mx-auto overflow-hidden group transition-all duration-300 hover:-translate-y-1`}
       style={{ boxShadow: customShadow }}
     >
       {/* Bottom Color Glow */}
@@ -12,7 +12,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
       ></div>
 
       {/* Text */}
-      <h3 className="text-white font-bold text-[16px] sm:text-[20px] relative z-10 leading-snug  drop-shadow-md">
+      <h3 className="text-white font-semibold text-[16px] sm:text-[20px] relative z-10 leading-snug  drop-shadow-md">
         {text}
       </h3>
     </div>
@@ -43,7 +43,7 @@ const ED_INAI = () => {
         </div>
 
         {/* Description */}
-        <p className="text-[16px] text-gray-300 max-w-4xl mx-auto mb-6 leading-relaxed font-medium">
+        <p className="text-[16px] md:text-[21px] text-gray-300 max-w-4xl mx-auto mb-9 leading-relaxed font-medium">
           edInai is an AI-powered learning platform where Virtual AI Teachers
           conduct interactive classes and help students learn better through
           conversation, visuals, and real-time support.

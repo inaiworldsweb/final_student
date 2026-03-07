@@ -61,7 +61,7 @@ const LearningToday = () => {
           </motion.h2>
 
           <motion.p
-            className="text-gray-200 text-[16px] mb-6 max-w-2xl font-medium opacity-90"
+            className="text-gray-200 text-[16px] mb-9 max-w-2xl font-medium opacity-90"
             variants={itemVariants}
           >
             Don't let doubts slow you down.

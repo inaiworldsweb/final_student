@@ -108,7 +108,7 @@ const StudentTestimonial = () => {
             Student Testimonials
           </h2>
         </div>
-        <p className="text-[16px] text-gray-400 mb-6 font-medium">
+        <p className="text-[16px] md:text-[21px] text-gray-400 mb-9 font-medium">
           What our users say about us
         </p>
       </motion.div>

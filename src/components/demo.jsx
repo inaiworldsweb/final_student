@@ -66,7 +66,7 @@ const Demo = () => {
 
           {/* Bullet Points */}
           <motion.ul
-            className="text-gray-400 space-y-2 mb-4 text-[16px]"
+            className="text-gray-400 space-y-2 mb-9 text-[16px]"
             variants={containerVariants}
           >
             <motion.li

@@ -76,7 +76,7 @@ const KeyFeatures = () => {
           Key Features For Students
         </h2>
         {/* </div> */}
-        <p className="text-[16px] mb-6 text-gray-400 font-medium">
+        <p className="text-[16px] md:text-[21px] mb-7 text-gray-400 font-medium">
           "Interactive lessons, real-time feedback, and smarter learning tools."
         </p>
       </motion.div>

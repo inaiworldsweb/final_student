@@ -97,18 +97,18 @@ const MeetYourTeacher = () => {
 
         {/* Heading */}
         <div className="relative z-10 flex flex-col items-center">
-          <div className="mb-2 border border-white/30 px-8 py-2 mb-6 backdrop-blur-sm rounded-none">
+          <div className=" border border-white/30 px-2 py-2 mb-6 backdrop-blur-sm rounded-none">
             {/* Mobile: Multi-line, Desktop: Single line */}
-            <h2 className="text-[25px] md:text-[40px] font-bold text-white uppercase text-center">
-              <span className="block md:hidden">MEET YOUR</span>
-              <span className="block md:hidden">AI</span>
-              <span className="block md:hidden">TEACHERS</span>
+            <h2 className="text-[18px] md:text-[40px] font-bold text-white uppercase text-center">
+              <span className=" md:hidden">MEET YOUR &nbsp;</span>
+              <span className=" md:hidden">AI &nbsp;</span>
+              <span className=" md:hidden">TEACHERS &nbsp;</span>
               <span className="hidden md:block whitespace-nowrap">
                 MEET YOUR AI TEACHERS
               </span>
             </h2>
           </div>
-          <p className="text-[16px] text-gray-300 mb-6 font-medium">
+          <p className="text-[16px] md:text-[21px] text-center text-gray-300 mb-6 font-medium">
             Three AI Teachers. One Learning Goal: Your Success.
           </p>
         </div>

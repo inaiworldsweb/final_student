@@ -133,8 +133,8 @@ const StudentStruggle = () => {
         <h2 className="text-[25px] md:text-[40px] font-bold text-white mb-6">
           Why Students Struggle in Traditional Learning
         </h2>
-        <p className="text-[16px] text-gray-400 max-w-3xl mb-8 mx-auto">
-          Most students want to understand concepts clearly — but face daily
+        <p className="text-[16px] md:text-[21px] text-gray-400 max-w-4xl mb-10 mx-auto">
+          Most students want to understand concepts clearly but face daily
           challenges:
         </p>
       </motion.div>

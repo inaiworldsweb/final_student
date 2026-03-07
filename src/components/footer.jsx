@@ -50,15 +50,12 @@ const SOCIAL_LINKS = [
     label: "Instagram",
     href: "#",
     icon: (
-      <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+      <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.567-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
     ),
     size: 20,
   },
 ];
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// ANIMATION VARIANTS
-// ═══════════════════════════════════════════════════════════════════════════════
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -85,9 +82,6 @@ const linkVariants = {
   },
 };
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// SMOOTH SCROLL HANDLER
-// ═══════════════════════════════════════════════════════════════════════════════
 const handleSmoothScroll = (e, href) => {
   e.preventDefault();
   const targetId = href.replace("#", "");
@@ -101,26 +95,22 @@ const handleSmoothScroll = (e, href) => {
   }
 };
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// FOOTER COMPONENT
-// ═══════════════════════════════════════════════════════════════════════════════
 const Footer = () => {
   return (
     <motion.footer
-      className="relative w-full bg-black border-t border-white/10 md:py-16 py-10"
+      className="relative w-full bg-black border-t text-start border-white/10 md:py-16 py-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
       variants={containerVariants}
     >
-      <div className="max-w-[1050px] mx-auto px-4 flex flex-col gap-6">
-        
-        {/* Top Row: Logo & Links - Responsive Stack */}
+      <div className="max-w-[1050px] mx-auto px-4  flex flex-col gap-6">
+        {/* Top Row: Logo & Links */}
         <motion.div
-          className="w-full flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6"
+          className="w-full flex flex-col md:flex-row  items-center justify-between gap-6 md:gap-12"
           variants={itemVariants}
         >
-          {/* Logo - Centered on mobile, Left on desktop */}
+          {/* Logo */}
           <motion.img
             src={logo}
             alt="EDINAI Logo"
@@ -131,21 +121,25 @@ const Footer = () => {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           />
 
-          {/* Links - Vertical on mobile, Horizontal on desktop */}
+          {/* Links - Mobile: 2 col grid, Desktop: Horizontal flex */}
           <motion.div
-            className="w-full md:w-auto flex items-center justify-center md:justify-end"
+            className="w-full md:w-auto"
             variants={containerVariants}
           >
-            <ul className="flex flex-col md:flex-row flex-wrap gap-4 md:gap-6 text-gray-400 text-sm items-center justify-center">
+            <ul className="grid grid-cols-2  md:flex md:flex-row gap-x-4 gap-y-8 md:gap-8 text-gray-400 text-sm items-center justify-items-center md:justify-end">
               {FOOTER_LINKS.map((link, index) => (
-                <motion.li key={index} variants={linkVariants}>
+                <motion.li 
+                  key={index} 
+                  variants={linkVariants}
+                  className={index === FOOTER_LINKS.length - 1 && FOOTER_LINKS.length % 2 !== 0 ? "col-span-2 md:col-span-1" : ""}
+                >
                   <motion.a
                     href={link.href}
                     onClick={(e) => handleSmoothScroll(e, link.href)}
                     aria-label={`Maps to ${link.label} section`}
-                    className="inline-flex items-center gap-2 hover:text-white transition-colors duration-200 text-center"
+                    className="inline-flex items-center gap-2 hover:text-white transition-colors duration-200 text-center whitespace-nowrap"
                     whileHover={{
-                      x: 5,
+                      y: -2,
                       color: "#ffffff",
                       transition: { duration: 0.2, ease: "easeOut" },
                     }}
@@ -161,17 +155,17 @@ const Footer = () => {
 
         {/* Bottom Row - Copyright and Social Icons */}
         <motion.div
-          className="w-full flex flex-col md:flex-row items-center justify-between gap-6 pt-6 border-t border-white/5 md:border-none"
+          className="w-full flex flex-col md:flex-row items-center justify-between gap-6 pt-10 mt-4 border-t border-white/10"
           variants={itemVariants}
         >
           {/* Copyright Text */}
-          <p className="text-gray-400 text-xs md:text-sm text-center md:text-left order-2 md:order-1">
-            © 2026 by INAI Worlds Pvt. Ltd. All Rights Reserved
+          <p className="text-gray-500 text-[10px] md:text-xs text-center md:text-left order-2 md:order-1 tracking-wider">
+            © 2026 BY INAI WORLDS PVT. LTD. ALL RIGHTS RESERVED
           </p>
 
           {/* Social Media Icons */}
           <motion.div
-            className="flex items-center gap-5 order-1 md:order-2"
+            className="flex items-center gap-6 order-1 md:order-2"
             variants={containerVariants}
           >
             {SOCIAL_LINKS.map((social, index) => (

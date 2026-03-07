@@ -110,7 +110,7 @@ function Header() {
 
           {/* Subtitle */}
           <motion.p
-            className="text-gray-400 text-sm md:text-base max-w-[900px] mx-auto leading-relaxed opacity-80"
+            className="text-gray-400 text-[16px] mb-4 md:text-[21px] max-w-[900px] mx-auto leading-relaxed opacity-80"
             variants={itemVariants}
           >
             edInai gives students access to Virtual AI Teachers trained on their
