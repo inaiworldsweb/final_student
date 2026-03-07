@@ -54,14 +54,6 @@ const SOCIAL_LINKS = [
     ),
     size: 20,
   },
-  {
-    label: "TikTok",
-    href: "#",
-    icon: (
-      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
-    ),
-    size: 18,
-  },
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -122,35 +114,36 @@ const Footer = () => {
       variants={containerVariants}
     >
       <div className="max-w-[1050px] mx-auto px-4 flex flex-col gap-6">
-        {/* Top Row - Logo (Left) and Students Section (Right) */}
+        
+        {/* Top Row: Logo & Links - Responsive Stack */}
         <motion.div
-          className="w-full flex flex-row flex-wrap items-center justify-between gap-6"
+          className="w-full flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6"
           variants={itemVariants}
         >
-          {/* ED-INAI Logo - Left */}
+          {/* Logo - Centered on mobile, Left on desktop */}
           <motion.img
             src={logo}
             alt="EDINAI Logo"
-            className="h-16 md:h-28 w-auto"
+            className="h-24 md:h-28 w-auto"
             loading="eager"
             fetchpriority="high"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           />
 
-          {/* Links - Right (row-wise) */}
+          {/* Links - Vertical on mobile, Horizontal on desktop */}
           <motion.div
-            className="flex-1 flex items-center justify-end"
+            className="w-full md:w-auto flex items-center justify-center md:justify-end"
             variants={containerVariants}
           >
-            <ul className="flex flex-row flex-wrap gap-6 text-gray-400 text-sm items-center">
+            <ul className="flex flex-col md:flex-row flex-wrap gap-4 md:gap-6 text-gray-400 text-sm items-center justify-center">
               {FOOTER_LINKS.map((link, index) => (
                 <motion.li key={index} variants={linkVariants}>
                   <motion.a
                     href={link.href}
                     onClick={(e) => handleSmoothScroll(e, link.href)}
-                    aria-label={`Navigate to ${link.label} section`}
-                    className="inline-flex items-center gap-2 ms-5 hover:text-white transition-colors duration-200"
+                    aria-label={`Maps to ${link.label} section`}
+                    className="inline-flex items-center gap-2 hover:text-white transition-colors duration-200 text-center"
                     whileHover={{
                       x: 5,
                       color: "#ffffff",
@@ -158,7 +151,6 @@ const Footer = () => {
                     }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    {/* <span className="text-gray-400">→</span> */}
                     <span>{link.label}</span>
                   </motion.a>
                 </motion.li>
@@ -169,17 +161,17 @@ const Footer = () => {
 
         {/* Bottom Row - Copyright and Social Icons */}
         <motion.div
-          className="w-full flex flex-col md:flex-row items-center justify-between gap-6"
+          className="w-full flex flex-col md:flex-row items-center justify-between gap-6 pt-6 border-t border-white/5 md:border-none"
           variants={itemVariants}
         >
-          {/* Copyright Text - Left */}
-          <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
+          {/* Copyright Text */}
+          <p className="text-gray-400 text-xs md:text-sm text-center md:text-left order-2 md:order-1">
             © 2026 by INAI Worlds Pvt. Ltd. All Rights Reserved
           </p>
 
-          {/* Social Media Icons - Right */}
+          {/* Social Media Icons */}
           <motion.div
-            className="flex items-center gap-5"
+            className="flex items-center gap-5 order-1 md:order-2"
             variants={containerVariants}
           >
             {SOCIAL_LINKS.map((social, index) => (
