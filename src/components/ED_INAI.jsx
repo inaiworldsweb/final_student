@@ -3,7 +3,7 @@ import React from "react";
 const FeatureCard = ({ text, shadowClass, customShadow }) => {
   return (
     <div
-      className={`relative bg-[#050505] rounded-2xl p-6 flex items-center justify-center text-center min-h-[160px] w-full max-w-[280px] mx-auto overflow-hidden group transition-all duration-300 hover:-translate-y-1`}
+      className={`relative bg-[#050505] rounded-2xl sm:p-6 p-2 flex items-center justify-center text-center min-h-[120px] w-full max-w-[280px] mx-auto overflow-hidden group transition-all duration-300 hover:-translate-y-1`}
       style={{ boxShadow: customShadow }}
     >
       {/* Bottom Color Glow */}
@@ -12,7 +12,7 @@ const FeatureCard = ({ text, shadowClass, customShadow }) => {
       ></div>
 
       {/* Text */}
-      <h3 className="text-white font-bold text-xl relative z-10 leading-snug  drop-shadow-md">
+      <h3 className="text-white font-bold text-[16px] sm:text-[20px] relative z-10 leading-snug  drop-shadow-md">
         {text}
       </h3>
     </div>
@@ -50,7 +50,7 @@ const ED_INAI = () => {
         </p>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 w-full">
           {/* Card 1 - Purple */}
           <FeatureCard
             text="Ask questions anytime"

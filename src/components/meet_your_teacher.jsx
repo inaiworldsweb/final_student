@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InaiLogo from "../logo/inai.svg";
 import VnaiLogo from "../logo/vnai.svg";
 import AiraLogo from "../logo/aira.svg";
@@ -37,6 +37,50 @@ const TeacherCard = ({ logo, name, role, description, showBorder = true }) => {
 };
 
 const MeetYourTeacher = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const teachers = [
+    {
+      logo: InaiLogo,
+      name: "INAI",
+      role: "Concept Builder",
+      description:
+        "Builds Strong Fundamentals With Clear, Structured Explanations.",
+    },
+    {
+      logo: VnaiLogo,
+      name: "VNAI",
+      role: "Visual Learning Expert",
+      description:
+        "Uses Visuals, Slides, And Examples To Simplify Tough Topics.",
+    },
+    {
+      logo: AiraLogo,
+      name: "AIRA",
+      role: "Doubt Solver & Progress Guide",
+      description:
+        "Answers Doubts Instantly And Tracks Your Learning Progress.",
+      showBorder: false,
+    },
+  ];
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % teachers.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + teachers.length) % teachers.length);
+  };
+
+  // Auto-rotate carousel every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % teachers.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [teachers.length]);
+
   return (
     <section className="relative w-full max-w-[1050px] mx-auto px-4 md:py-16 py-10 flex flex-col items-center justify-center">
       {/* Main Gradient Container */}
@@ -55,7 +99,7 @@ const MeetYourTeacher = () => {
         <div className="relative z-10 flex flex-col items-center">
           <div className="mb-2 border border-white/30 px-8 py-2 mb-6 backdrop-blur-sm rounded-none">
             {/* Mobile: Multi-line, Desktop: Single line */}
-            <h2 className="text-[25px] md:text-[40px] font-bold text-white  uppercase text-center">
+            <h2 className="text-[25px] md:text-[40px] font-bold text-white uppercase text-center">
               <span className="block md:hidden">MEET YOUR</span>
               <span className="block md:hidden">AI</span>
               <span className="block md:hidden">TEACHERS</span>
@@ -64,13 +108,71 @@ const MeetYourTeacher = () => {
               </span>
             </h2>
           </div>
-          <p className="text-[16px] text-gray-300 mb-6  font-medium">
+          <p className="text-[16px] text-gray-300 mb-6 font-medium">
             Three AI Teachers. One Learning Goal: Your Success.
           </p>
         </div>
 
-        {/* Teachers Grid */}
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 w-full">
+        {/* Mobile Carousel */}
+        <div className="md:hidden relative w-full">
+          <div className="flex items-center justify-between mb-4">
+            <button
+              onClick={prevSlide}
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+             <svg
+  className="w-6 h-6"
+  fill="none"
+  stroke="currentColor"
+  viewBox="0 0 24 24"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    d="M15 19l-7-7 7-7"
+  />
+</svg>
+            </button>
+            <div className="text-white text-sm font-medium">
+              {currentIndex + 1} / {teachers.length}
+            </div>
+            <button
+              onClick={nextSlide}
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div className="w-full overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {teachers.map((teacher, index) => (
+                <div key={index} className="w-full flex-shrink-0">
+                  <TeacherCard {...teacher} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-3 relative z-10 w-full">
           {/* INAI */}
           <TeacherCard
             logo={InaiLogo}
