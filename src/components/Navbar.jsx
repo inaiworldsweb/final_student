@@ -46,7 +46,7 @@ function Navbar() {
             }}
             whileTap={{ scale: 0.98 }}
           >
-            Demo
+          Get  Demo
           </motion.button>
         </div>
       </motion.nav>

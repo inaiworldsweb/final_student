@@ -139,6 +139,12 @@ function Header() {
             Start Learning Now
           </motion.button>
           <motion.button
+            onClick={() => {
+              const element = document.getElementById("watch-demo");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="bg-transparent border border-white hover:border-gray-400 text-white font-medium text-base md:px-8 px-8 md:py-3.5 py-2 rounded-[7px] cursor-pointer transition-all duration-300 hover:bg-white/5"
             whileTap={{ scale: 0.98 }}
           >
